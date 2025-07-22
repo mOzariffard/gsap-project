@@ -73,11 +73,19 @@ const cocktailLists = [
        price: "$29",
     },
    ];
+
+   const goodLists = [
+      "Handpicked ingredients",
+      "Signature techniques",
+      "Bartending artistry in action",
+      "Freshly muddled flavors",
+     ];
    
 
    export{
     navLinks,
     cocktailLists,
     mockTailLists,
+    goodLists,
 
    }
