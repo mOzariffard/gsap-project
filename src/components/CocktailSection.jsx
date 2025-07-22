@@ -1,9 +1,29 @@
 import React from 'react'
 import leftLaef from "/images/cocktail-left-leaf.png";
 import rightLaef from "/images/cocktail-right-leaf.png";
-import { cocktailLists, mockTailLists } from '../../constants';
-
+import { cocktailLists, mockTailLists } from '../../constants/index.js';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 const CocktailSection = () => {
+    useGSAP(()=>{
+        const prallaxTimeline = gsap.timeline({
+            scrollTrigger:{
+                trigger: '#cocktails',
+                start: 'top 30%',
+                end: 'bottom 80%',
+                scrub: true,
+            }
+        });
+        prallaxTimeline
+        .from('#c-left-leaf',{
+            x:-100 , y:100 
+        })
+        .from('#c-right-leaf',{
+            x:100 , y:100
+        })
+
+        
+    },[]);
   return (
     <section id='cocktails' className='noisy'>
         <img src={leftLaef} alt="L-leaf" id='c-left-leaf' />

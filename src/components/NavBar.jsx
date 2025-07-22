@@ -1,5 +1,5 @@
 import React from 'react'
-import { navLinks } from '../../constants'
+import { navLinks } from '../../constants/index.js'
 import logo from '/images/logo.png'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
