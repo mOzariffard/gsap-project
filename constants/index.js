@@ -10,7 +10,7 @@
     },
 
     {
-        id: 'work',
+        id: 'art',
         title: 'The Art',
     },
 
@@ -80,6 +80,14 @@ const cocktailLists = [
       "Bartending artistry in action",
       "Freshly muddled flavors",
      ];
+
+     const featureLists = [
+      "Perfectly balanced blends",
+      "Garnished to perfection",
+      "Ice-cold every time",
+      "Expertly shaken & stirred",
+     ];
+     
    
 
    export{
@@ -87,5 +95,6 @@ const cocktailLists = [
     cocktailLists,
     mockTailLists,
     goodLists,
-
+    featureLists,
+    
    }
