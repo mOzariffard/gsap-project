@@ -21,7 +21,7 @@ const MenuSection = () => {
     return cocktailsSilderList[(currentIndex + inedxOffset + totalCocktails)% totalCocktails];
   };
 
-  const currentCocktail = getCocktailAt(0);
+  const currentCocktail = getCocktailAt(0) || {};
   const prevCocktail = getCocktailAt(-1).name;
   const nextCocktail = getCocktailAt(1).name;
 
