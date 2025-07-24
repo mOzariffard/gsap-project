@@ -1,4 +1,4 @@
-import React, { use, useState } from 'react'
+import React, { useState } from 'react'
 import rightSlider from "/images/slider-right-leaf.png";
 import leftSlider from "/images/slider-left-leaf.png";
 import { cocktailsSilderList } from '../../constants/index.js';
@@ -16,6 +16,15 @@ const MenuSection = () => {
 
     setCurrentIndex(newIndex);
   }
+
+  const getCocktailAt= (inedxOffset)=>{
+    return cocktailsSilderList[(currentIndex + inedxOffset + totalCocktails)% totalCocktails];
+  };
+
+  const currentCocktail = getCocktailAt(0);
+  const prevCocktail = getCocktailAt(-1).name;
+  const nextCocktail = getCocktailAt(1).name;
+
   return (
     <section id='menu' aria-labelledby='menu-heading'>
         <img src={leftSlider} alt='Left leaf' id='m-left-leaf'/>
@@ -46,14 +55,18 @@ const MenuSection = () => {
         <div className='content'>
           <div className='arrows'>
             <button className='text-left' onClick={()=>goToSlider(currentIndex - 1)}>
-              <span> Prev Cocktailname</span>
+              <span> {prevCocktail} </span>
               <img src={rArrow} alt="right-Arrow"  aria-hidden="true" />
             </button>
 
             <button className='text-left' onClick={()=>goToSlider(currentIndex + 1)}>
-              <span> Prev Cocktailname</span>
+              <span> {nextCocktail} </span>
               <img src={lArrow} alt="left-Arrow"  aria-hidden="true" />
             </button>
+          </div>
+
+          <div className='cocktail'>
+            <img src={currentCocktail.image} alt={currentCocktail.name} className='object-contain' />
           </div>
         </div>
     </section>
