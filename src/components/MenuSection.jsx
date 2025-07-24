@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import rightSlider from "/images/slider-right-leaf.png";
 import leftSlider from "/images/slider-left-leaf.png";
 import { cocktailsSilderList } from '../../constants/index.js';
@@ -7,6 +7,9 @@ import lArrow from '/images/left-arrow.png';
 
 
 const MenuSection = () => {
+  const contentRef = useRef();
+
+
   const [currentIndex, setCurrentIndex]= useState(0);
 
   const totalCocktails =cocktailsSilderList.length;
@@ -67,6 +70,19 @@ const MenuSection = () => {
 
           <div className='cocktail'>
             <img src={currentCocktail.image} alt={currentCocktail.name} className='object-contain' />
+          </div>
+
+          <div className='recipe'>
+            <div ref={contentRef} className='info'>
+              <p>Recipe for: </p>
+              <p id='title'>{currentCocktail.name}</p>
+            </div>
+
+            <div className='details'>
+              <h2> {currentCocktail.title} </h2>
+              <p> {currentCocktail.description} </p>
+            </div>
+
           </div>
         </div>
     </section>
