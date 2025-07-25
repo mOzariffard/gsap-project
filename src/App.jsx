@@ -7,6 +7,7 @@ import CocktailSection from '@/components/CocktailSection';
 import AboutSection from '@/components/AboutSection';
 import ArtSection from '@/components/ArtSection';
 import MenuSection from './components/MenuSection';
+import ContactSection from './components/ContactSection';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -20,6 +21,7 @@ function App() {
      <AboutSection/>
      <ArtSection/>
      <MenuSection/>
+     <ContactSection />
     </main>
   )
 }
