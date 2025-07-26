@@ -1,6 +1,6 @@
 import React from 'react'
-import fRight from "/images/footer-right-leaf.png";
-import fLeft from "/images/footer-left-leaf.png";
+import fRight from `${import.meta.env.BASE_URL}/images/footer-right-leaf.png`;
+import fLeft from `${import.meta.env.BASE_URL}/images/footer-left-leaf.png`;
 import { openingHours, socials } from '../../constants/index.js';
 import { useGSAP } from '@gsap/react';
 import { SplitText } from 'gsap/all';

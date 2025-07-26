@@ -1,16 +1,16 @@
-import drink1 from "/images/drink1.png";
-import drink2 from "/images/drink2.png";
-import drink3 from "/images/drink3.png";
-import drink4 from "/images/drink4.png";
+import drink1 from `${import.meta.env.BASE_URL}/images/drink1.png`;
+import drink2 from `${import.meta.env.BASE_URL}/images/drink2.png`;
+import drink3 from `${import.meta.env.BASE_URL}/images/drink3.png`;
+import drink4 from `${import.meta.env.BASE_URL}/images/drink4.png`;
 
-import instagram from "/images/insta.png";
-import x from "/images/x.png";
-import facebook from "/images/fb.png";
+import instagram from `${import.meta.env.BASE_URL}/images/insta.png`;
+import x from `${import.meta.env.BASE_URL}/images/x.png`;
+import facebook from `${import.meta.env.BASE_URL}/images/fb.png`;
 
-import prof1 from "/images/profile1.png";
-import prof2 from "/images/profile2.png";
-import prof3 from "/images/profile3.png";
-import prof4 from "/images/profile4.png";
+import prof1 from `${import.meta.env.BASE_URL}/images/profile1.png`;
+import prof2 from `${import.meta.env.BASE_URL}/images/profile2.png`;
+import prof3 from `${import.meta.env.BASE_URL}/images/profile3.png`;
+import prof4 from `${import.meta.env.BASE_URL}/images/profile4.png`;
 
 
 

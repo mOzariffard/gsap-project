@@ -1,6 +1,6 @@
 import React from 'react'
-import { navLinks } from '../../constants/index.js'
-import logo from '/images/logo.png'
+import { navLinks } from '../../constants/index.js';
+import logo from `${import.meta.env.BASE_URL}/images/logo.png`;
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 

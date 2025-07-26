@@ -1,7 +1,7 @@
 import React from 'react'
 import { featureLists, goodLists } from '../../constants/index.js'
-import checkImg from "/images/check.png";
-import underImg from "/images/under-img.jpg";
+import checkImg from `${import.meta.env.BASE_URL}/images/check.png`;
+import underImg from `${import.meta.env.BASE_URL}/images/under-img.jpg`;
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { useMediaQuery } from 'react-responsive';
