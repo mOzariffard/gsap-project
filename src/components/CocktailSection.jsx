@@ -1,6 +1,6 @@
 import React from 'react'
-import leftLaef from `${import.meta.env.BASE_URL}/images/cocktail-left-leaf.png`;
-import rightLaef from `${import.meta.env.BASE_URL}/images/cocktail-right-leaf.png`;
+import leftLaef from "/images/cocktail-left-leaf.png";
+import rightLaef from "/images/cocktail-right-leaf.png";
 import { cocktailLists, mockTailLists } from '../../constants/index.js';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';

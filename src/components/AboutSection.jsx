@@ -1,9 +1,9 @@
 import React from 'react'
-import ab1 from `${import.meta.env.BASE_URL}/images/abt1.png`;
-import ab2 from `${import.meta.env.BASE_URL}/images/abt2.png`;
-import ab3 from `${import.meta.env.BASE_URL}/images/abt3.png`;
-import ab4 from `${import.meta.env.BASE_URL}/images/abt4.png`;
-import ab5 from `${import.meta.env.BASE_URL}/images/abt5.png`;
+import ab1 from "/images/abt1.png";
+import ab2 from "/images/abt2.png";
+import ab3 from "/images/abt3.png";
+import ab4 from "/images/abt4.png";
+import ab5 from "/images/abt5.png";
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { SplitText } from 'gsap/all';

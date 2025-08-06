@@ -1,12 +1,12 @@
 import React, { useRef } from 'react'
-import heroLeftLeaft from `${import.meta.env.URL_BASE}/images/hero-left-leaf.png`;
-import heroRightLeaf from `${import.meta.env.URL_BASE}/images/hero-right-leaf.png`;
+import heroLeftLeaft from "/images/hero-left-leaf.png";
+import heroRightLeaf from "/images/hero-right-leaf.png";
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { SplitText } from 'gsap/SplitText';
 import { useMediaQuery } from 'react-responsive';
 // import inVideo from "/videos/input.mp4";
-import opVideo from `${import.meta.env.URL_BASE}/videos/output.mp4`;
+import opVideo from "/videos/output.mp4";
 
 
 const HeroSection = () => {

@@ -10,5 +10,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, 'src'),
     }
   },
-  base: '/gsap-application'
+  base: '/gsap-project'
 })

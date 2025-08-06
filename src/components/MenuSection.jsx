@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react';
-import rightSlider from `${import.meta.env.BASE_URL}/images/slider-right-leaf.png`;
-import leftSlider from `${import.meta.env.BASE_URL}/images/slider-left-leaf.png`;
+import rightSlider from "../../public/images/slider-right-leaf.png";
+import leftSlider from "/images/slider-left-leaf.png";
 import { cocktailsSilderList } from '../../constants/index.js';
-import rArrow from `${import.meta.env.BASE_URL}/images/right-arrow.png`;
-import lArrow from `${import.meta.env.BASE_URL}/images/left-arrow.png`;
+import rArrow from "/images/right-arrow.png";
+import lArrow from "/images/left-arrow.png";
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 
