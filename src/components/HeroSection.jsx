@@ -95,8 +95,8 @@ const HeroSection = () => {
 
                 <div className='view-cocktails'>
                     <p className='subtitle'>
-                        Every cocktail on our menu is a blend of premium ingredients, creative flarors, and a touch of magic.
-                        timeless recipesdesigned to elevate your cocktail experience.
+                        Every cocktail on our menu is a blend of premium ingredients, creative flavors, and a touch of magic.
+                        timeless recipes designed to elevate your cocktail experience.
                     </p>
                     <a href="#cocktails"> View Cocktails</a>
                 </div>

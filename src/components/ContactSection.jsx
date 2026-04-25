@@ -45,7 +45,7 @@ return (
                     </div>
 
                     <div>
-                        <h3>Opent Every Day</h3>
+                        <h3>Open Every Day</h3>
                         {openingHours.map((time)=>(
                             <p key={time.day}>
                                 {time.day} : {time.time}    
@@ -57,9 +57,9 @@ return (
                         <h3> Socials</h3>
                         
                         <div className='flex-center gap-5'>
-                            {socials.map((icon ,index)=>(
+                            {socials.map((icon)=>(
                                 <a key={icon.name}
-                                    href={icon.link}
+                                    href={icon.url}
                                     target='_blank'
                                     rel='noopener noreferrer'
                                     aria-label={icon.name}

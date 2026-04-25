@@ -15,7 +15,7 @@ const ArtSection = () => {
             scrollTrigger:{
                 trigger: '#art',
                 start,
-                end: 'bottom centrer',
+                end: 'bottom center',
                 scrub: 1.5,
                 pin:true,
             }
